@@ -37,5 +37,8 @@
     "mocha": "^2.1.0",
     "pre-commit": "^1.1.1",
     "standard": "^5.0.0"
+  },
+  "dependencies": {
+    "bluetooth-serial-port": "^2.1.1"
   }
 }
