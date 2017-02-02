@@ -1,0 +1,19 @@
+{
+  "name": "cordova-plugin-bluetooth-serial-electron",
+  "version": "0.0.0",
+  "homepage": "https://github.com/rondoe/cordova-plugin-bluetooth-serial-electron",
+  "authors": [
+    "Roman Mahrer <roman.mahrer@hobex.at>"
+  ],
+  "description": "",
+  "main": "lib/index.js",
+  "keywords": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
