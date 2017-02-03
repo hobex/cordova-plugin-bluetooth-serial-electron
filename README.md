@@ -8,6 +8,7 @@
 
 ```sh
 npm install cordova-plugin-bluetooth-serial-electron --save
+npm rebuild --runtime=electron --target=1.4.3 --disturl=https://atom.io/download/atom-shell --build-from-source
 ```
 
 ## Usage
