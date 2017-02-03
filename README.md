@@ -12,7 +12,16 @@ npm install cordova-plugin-bluetooth-serial-electron --save
 
 ## Usage
 
+You need to install the electron branch of my cordova-plugin-bluetooth-serial fork
+
+```
+npm install https://github.com/hobex/BluetoothSerial.git#electron --save
+```
+
+After that, require the module in your electron main and require the ipc to the module.
+
 ```javascript
+var ipc = require('electron').ipcMain;
 var cordovaPluginBluetoothSerialElectron = require('cordova-plugin-bluetooth-serial-electron')(ipc)
 ```
 

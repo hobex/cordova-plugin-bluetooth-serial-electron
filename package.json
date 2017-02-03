@@ -1,5 +1,5 @@
 {
-  "name": "cordova-plugin-bluetooth-serial-electron",
+  "name": "electron-cordova-bluetooth-serial",
   "version": "0.0.1",
   "description": "",
   "main": "lib/index.js",
@@ -11,20 +11,20 @@
   "scripts": {
     "lint": "jshint lib/*.js",
     "test-spec": "mocha test/*.spec.js -R spec --bail",
-    "test-cov": "istanbul cover -x *.spec.js node_modules/mocha/bin/_mocha -- {lib,test}/**/*.spec.js -R spec --bail",
+    "test-cov": "istanbul cover -x *.spec.js node_modules/mocha/bin/_mocha -- test/*.spec.js -R spec --bail",
     "test": "npm run lint && npm run test-cov"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hobex/cordova-plugin-bluetooth-serial-electron.git"
+    "url": "https://github.com/hobex/electron-cordova-bluetoothserial.git"
   },
   "keywords": [],
   "author": "Roman Mahrer <roman.mahrer@hobex.at>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hobex/cordova-plugin-bluetooth-serial-electro/issues"
+    "url": "https://github.com/hobex/electron-cordova-bluetoothserial/issues"
   },
-  "homepage": "https://github.com/hobex/cordova-plugin-bluetooth-serial-electron",
+  "homepage": "https://github.com/hobex/electron-cordova-bluetoothserial",
   "devDependencies": {
     "chai": "^3.2.0",
     "istanbul": "^0.3.5",
