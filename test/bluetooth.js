@@ -5,7 +5,7 @@ describe('Bluetooth - serialport', function() {
   describe("List", function() {
 
     it('should return hobex serial ports', function(done) {
-      bt.listPaired(function(devices) {
+      bt.list(function(devices) {
         console.log(devices);
         done();
       });
@@ -15,15 +15,17 @@ describe('Bluetooth - serialport', function() {
 
   describe("Spire", function() {
     it("should connect", function(done) {
-      bt.connectBt("/dev/cu.HOBEX-10008299-SerialPo", function(err) {
+      var l = new bt();
+      l.open("/dev/cu.HOBEX-10008299-SerialPo", function(err) {
         if (err) {
           console.log(err);
           return done(err);
         }
+        console.log("connected");
         var b = new Buffer("41134", "binary");
-        bt.write(b, function(err) {
+        l.write(b, function(err) {
           setTimeout(function() {
-            bt.disconnect(function(err) {
+            l.disconnect(function(err) {
               done();
             });
           }, 1000);
