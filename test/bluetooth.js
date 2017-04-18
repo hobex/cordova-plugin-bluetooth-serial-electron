@@ -17,7 +17,7 @@ describe('Bluetooth - serialport', function() {
     it("should connect", function(done) {
       this.timeout(15000);
       var l = new bt();
-      l.open("/dev/cu.HOBEX-10008299-SerialPo-2", function(err) {
+      l.open("6626cc2db0925f29db7d8db50169c3cdcc91f27a", function(err) {
         if (err) {
           console.log(err);
           return done(err);
