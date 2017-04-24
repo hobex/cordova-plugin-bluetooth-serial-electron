@@ -36,6 +36,7 @@
     "electron-rebuild": "^1.5.7"
   },
   "dependencies": {
+    "crypto": "0.0.3",
     "serialport": "^4.0.7"
   }
 }

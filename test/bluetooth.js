@@ -17,7 +17,7 @@ describe('Bluetooth - serialport', function() {
     it("should connect", function(done) {
       this.timeout(15000);
       var l = new bt();
-      l.open("COM7", function(err) {
+      l.open("6626cc2db0925f29db7d8db50169c3cdcc91f27a", function(err) {
         if (err) {
           console.log(err);
           return done(err);
@@ -25,8 +25,8 @@ describe('Bluetooth - serialport', function() {
         console.log("connected");
         // TX: 02 31 35 31 03 36 (bytes)
         // 2,49,53,49,3,54
-        var b = [0x05, 0x02, 0x31, 0x35, 0x31, 0x03, 0x36];
-        // var b = [0x05, 0x02, 0x49, 0x53, 0x49, 0x03, 0x54];
+        // var b = [0x05, 0x02, 0x31, 0x35, 0x31, 0x03, 0x36];
+        var b = [0x05, 0x02, 0x49, 0x53, 0x49, 0x03, 0x54];
         l.write(b, function(err) {
           setTimeout(function() {
             l.disconnect(function(err) {
