@@ -38,6 +38,6 @@
   "dependencies": {
     "crypto": "0.0.3",
     "debug": "^2.6.4",
-    "serialport": "^4.0.7"
+    "serialport": "^5.0.0"
   }
 }
