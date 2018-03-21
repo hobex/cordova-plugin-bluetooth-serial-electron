@@ -13,7 +13,7 @@
     "test-spec": "mocha test/*.spec.js -R spec --bail",
     "test-cov": "istanbul cover -x *.spec.js node_modules/mocha/bin/_mocha -- test/*.spec.js -R spec --bail",
     "test": "npm run lint && npm run test-cov",
-    "test_bt": "DEBUG=* mocha test test/bluetooth.js"
+    "test_bt": "mocha test test/bluetooth.js"
   },
   "repository": {
     "type": "git",
@@ -36,6 +36,7 @@
     "electron-rebuild": "^1.5.7"
   },
   "dependencies": {
+    "bluetooth-serial-port": "^2.1.5",
     "crypto": "0.0.3",
     "debug": "^2.6.4",
     "serialport": "^4.0.7"

@@ -5,6 +5,7 @@ describe('Bluetooth - serialport', function() {
   describe("List", function() {
 
     it('should return hobex serial ports', function(done) {
+      this.timeout(30000);
       bt.list(function(devices) {
         console.log(devices);
         done();
