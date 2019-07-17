@@ -1,6 +1,6 @@
 {
   "name": "electron-cordova-bluetoothserial",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "",
   "main": "lib/index.js",
   "files": [
@@ -36,6 +36,8 @@
     "electron-rebuild": "^1.5.7"
   },
   "dependencies": {
-    "serialport": "^6.1.1"
+    "crypto": "0.0.3",
+    "debug": "^2.6.4",
+    "serialport": "^4.0.7"
   }
 }
